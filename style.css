@@ -1,0 +1,158 @@
+.app{
+    width: 425px;
+    text-align: left;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ------------------------------TOP----------------------------------- */
+.top{
+    height: 200px;
+}
+.head{
+    align-items: center;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 15% auto 50px auto;
+    grid-template-rows: 30px 30px auto;
+    grid-template-areas: 
+        "arrow h1 veri ."
+        "arrow p . ."
+        "header header header header";
+}
+.h-1{
+    grid-area: h1;
+    margin: 0;
+}
+.arrow{
+    grid-area: arrow;
+    width: 100%;
+    height: 100%
+}
+.verified{
+    grid-area: veri;
+    width: 25px;
+    padding-left: 5px;
+}
+.p{
+    grid-area: p;
+    color: #818181;
+    padding: 0px;
+    margin: 0;
+}
+.header{
+    grid-area: header;
+    width: 100%;
+}
+/* ------------------------------------------CENTER----------------------------- */
+.profile{
+    height: fit-content;
+}
+.profile img{
+    align-items: center;
+}
+.profile-content{
+    align-items: center;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: auto 50px auto 100px 120px;
+    grid-template-rows: 100px auto 30px 60px 40px;
+    grid-template-areas: 
+        "avatar . . dots follow"
+        "h1 veri . . ."
+        "p . . . ."
+        "about about about about about"
+        "p-1 p-1 p-1 p-1 p-1";
+}
+.p-1{
+    color: #818181;
+    font-size: 20px;
+    grid-area: p-1;
+    margin: 5px 0;
+}
+.about{
+    grid-area: about;
+    font-size: 16px;
+}
+.avatar{
+    margin-left: 15px;
+    height: 70%;
+    border-radius: 50%;
+    grid-area: avatar;
+}
+.dots{
+    justify-self: center;
+    border: #1fa1f1 1px solid;
+    border-radius: 50%;
+    height: 20px;
+    padding: 10px;
+    grid-area: dots;
+}
+.dots img{
+    width: 25px;
+}
+.follow{
+    text-align: center;
+    color: #1fa1f1;
+    font-weight: 800;
+    font-size: 18px;
+    justify-self: center;
+    border: #1fa1f1 1px solid;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100px;
+    height: 25px;
+    padding: 5px;
+    align-self: center;
+    grid-area: follow;
+}
+
+
+.tweet{
+    margin: 0px;
+}
+.tabs{
+    text-align: center;
+    margin: 0px;
+    color: #5a5a5a;
+    font-size: 19px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 25% 35% auto autp;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "t1 t2 t3 t4";
+}
+.tab-1{
+    grid-area: t1;
+    color: #1fa1f1;
+    border-bottom: #1fa1f1 solid 3px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tab-2{
+    grid-area: t2;
+}
+.tab-3{
+    grid-area: t3;
+}
+.tab-4{
+    grid-area: t4;
+}
+.tweet img{
+    width: 100%;
+    grid-area: tweet;
+}
+
+
+
+/* ----------------------------FOOTER---------------------------- */
+.footer{
+    border-top: solid #eaecef 1px;
+    border-bottom: solid #a7a7a8 1px;
+    box-shadow: 0px 2px #c5c5c56e;
+}
+.footer img{
+    width: 5%;
+    padding: 10px 9.6%;
+}
